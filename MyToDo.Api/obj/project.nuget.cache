@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KoUCv1U2lLiIxDIfAMYZqVyHhe/+SaluSadFI9eyncirXR5bhzy2epibs9c2JmmdMyU3vhx6nqzMWHCjQA1afA==",
+  "dgSpecHash": "Oz97ghUZGnxbJXXROc3A1ps5D3sfi+j6z4e1Jrrc9QSOBFTbZO/ZKHPlQRAjWjYmxL5KyG/DmyOkIvz9b7jFnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\YYH\\source\\repos\\MyToDo\\MyToDo.Api\\MyToDo.Api.csproj",
+  "projectFilePath": "C:\\Users\\YYH\\Desktop\\workspace\\Todo\\MyToDo.Api\\MyToDo.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YYH\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -15,6 +15,7 @@
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
+    "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.autohistory\\6.0.0\\microsoft.entityframeworkcore.autohistory.6.0.0.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.2\\microsoft.entityframeworkcore.design.8.0.2.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.2\\microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.2\\microsoft.entityframeworkcore.sqlite.8.0.2.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z12FjtI+hvyvNp0aglvtQv/EUaGZkFISpK6mi4bESoEyCorNnXpOtgDy8Fzp3BZHTXfWbgl2f59mUI5Qc3JsDw==",
+  "dgSpecHash": "HhnZ/IUbGiSe9a89F6/EfTxkvC2oFk9m+fWXoZ7w5XVevVtZaX+/zocwSVe/OY+qjlkX132g0A83GBhVHzKJCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\YYH\\source\\repos\\MyToDo\\MyToDo\\MyToDo.csproj",
+  "projectFilePath": "C:\\Users\\YYH\\Desktop\\workspace\\Todo\\MyToDo\\MyToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YYH\\.nuget\\packages\\dryioc.dll\\4.7.7\\dryioc.dll.4.7.7.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
@@ -20,11 +20,7 @@
     "C:\\Users\\YYH\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\YYH\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\YYH\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\YYH\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\YYH\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\YYH\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\YYH\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,6 @@
+using Arch.EntityFrameworkCore.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
+using MyToDo.Api.Context;
 
 namespace MyToDo.Api.Controllers
 {
@@ -15,15 +17,23 @@ namespace MyToDo.Api.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IUnitOfWork uniOfWork;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,
+            IUnitOfWork uniOfWork)
+
         {
             _logger = logger;
+            this.uniOfWork=uniOfWork;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            var server = uniOfWork.GetRepository<User>();
+            var res = server.GetAll();
+            Console.WriteLine("dd");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

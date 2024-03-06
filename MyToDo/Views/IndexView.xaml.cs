@@ -23,6 +23,7 @@ namespace MyToDo.Views
         public IndexView()
         {
             InitializeComponent();
+             
         }
     }
 }
