@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Oz97ghUZGnxbJXXROc3A1ps5D3sfi+j6z4e1Jrrc9QSOBFTbZO/ZKHPlQRAjWjYmxL5KyG/DmyOkIvz9b7jFnw==",
+  "dgSpecHash": "uqyiUFbR4r+N0IwpmNcqlMXLVMWJgFcnQxKH74xF0a4RteiUeRtxmoCGoah71CQ3bX6IjPRYgiXRJJRKa7T6ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\YYH\\Desktop\\workspace\\Todo\\MyToDo.Api\\MyToDo.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\YYH\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\YYH\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

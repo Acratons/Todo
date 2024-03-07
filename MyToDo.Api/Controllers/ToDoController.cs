@@ -1,25 +1,28 @@
 ﻿using Arch.EntityFrameworkCore.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
 using MyToDo.Api.Context;
+using MyToDo.Api.Service;
+using MyToDo.share.Dtos;
 
 namespace MyToDo.Api.Controllers
 {
     /// <summary>
+    /// 待办事项控制器
     /// 路由带前缀的api-控制器-方法
     /// [ApiController]特性attribute
     /// </summary>
     [ApiController]
-    [Route("api/[ToDoController]/[action]")]
+    [Route("api/[controller]/[action]")]
     public class ToDoController : ControllerBase
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IToDoService toDoService;
 
         /*
         * 工作单元
         */
-        public ToDoController(IUnitOfWork unitOfWork)
+        public ToDoController(IToDoService toDoService)
         {
-            this.unitOfWork=unitOfWork;
+            this.toDoService=toDoService;
         }
 
 
@@ -29,13 +32,26 @@ namespace MyToDo.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet]
-        public async Task<IActionResult> Get(int id)
-        {
-            var repository = unitOfWork.GetRepository<ToDo>();
-            var todo = await repository.GetFirstOrDefaultAsync(predicate: t => t.Id.Equals(id)) ;
+        //[HttpGet]
+        //public async Task<ApiResponse> Get(int id)
+        //{
+        //    var res =await toDoService.GetSingleAsync(id);
 
-            return await Get(id);
-        }
+        //    return new ApiResponse(true,res);
+        //}
+        [HttpGet]
+        public async Task<ApiResponse> Get(int id) => await toDoService.GetSingleAsync(id);
+
+        [HttpGet]
+        public async Task<ApiResponse> GetAll(int id) => await toDoService.GetAllAsync();
+
+        [HttpPost]
+        public async Task<ApiResponse> Add([FromBody] ToDoDto model) => await toDoService.AddAsync(model);
+
+        [HttpPost]
+        public async Task<ApiResponse> Update([FromBody] ToDoDto model) => await toDoService.UpdateAsync(model);
+         
+        [HttpDelete]
+        public async Task<ApiResponse> Delete(int id) => await toDoService.DeleteAsync(id);
     }
 }

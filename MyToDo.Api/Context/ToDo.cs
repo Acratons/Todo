@@ -5,6 +5,6 @@
         public string Title { set; get; }
         public string Content { set; get; }
 
-        public string Status { set; get; }
+        public int Status { set; get; }
     }
 }

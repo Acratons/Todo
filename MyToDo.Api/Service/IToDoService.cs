@@ -1,6 +1,9 @@
-﻿namespace MyToDo.Api.Service
+﻿using MyToDo.Api.Context;
+using MyToDo.share.Dtos;
+
+namespace MyToDo.Api.Service
 {
-    public interface IToDoService
+    public interface IToDoService : IBaseService<ToDoDto>
     {
     }
 }

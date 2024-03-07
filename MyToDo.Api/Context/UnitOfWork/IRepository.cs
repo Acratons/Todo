@@ -178,6 +178,7 @@ namespace Arch.EntityFrameworkCore.UnitOfWork
 
         /// <summary>
         /// Gets the first or default entity based on a predicate, orderby delegate and include delegate. This method defaults to a read-only, no-tracking query.
+        /// 基于谓词、orderby委托和include委托获取第一个或默认实体。此方法默读、无跟踪查询。
         /// </summary>
         /// <param name="predicate">A function to test each element for a condition.</param>
         /// <param name="orderBy">A function to order elements.</param>
