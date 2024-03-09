@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyToDo.Api.Context;
 using MyToDo.Api.Service;
 using MyToDo.share.Dtos;
+using MyToDo.share.Parameters;
 
 namespace MyToDo.Api.Controllers
 {
@@ -43,11 +44,11 @@ namespace MyToDo.Api.Controllers
         public async Task<ApiResponse> Get(int id) => await toDoService.GetSingleAsync(id);
 
         [HttpGet]
-        public async Task<ApiResponse> GetAll(int id) => await toDoService.GetAllAsync();
+        public async Task<ApiResponse> GetAll([FromQuery] QueryParameter parameter) => await toDoService.GetAllAsync(parameter);
 
         [HttpPost]
         public async Task<ApiResponse> Add([FromBody] ToDoDto model) => await toDoService.AddAsync(model);
-
+         
         [HttpPost]
         public async Task<ApiResponse> Update([FromBody] ToDoDto model) => await toDoService.UpdateAsync(model);
          

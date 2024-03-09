@@ -4,7 +4,6 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using MyToDo.Api.Context;
 using MyToDo.Api.Context.Repository;
-using MyToDo.Api.Extention;
 using MyToDo.Api.Service;
 using MyToDo.share.Dtos;
 
@@ -29,15 +28,17 @@ builder.Services.AddDbContext<MyToDoContext>(options =>
 .AddCustomRepository<User, UserRepository>();//依赖注入工作单元
 
 
-//注入service
+//依赖注入service
 builder.Services.AddTransient<IToDoService, ToDoService>();
+builder.Services.AddTransient<IMemoService, MemoService>();
 
 
 //配置添加AutoMapper的服务
+//数据传输层与数据库实体层之间的映射转换
 var autoConfiguration = new MapperConfiguration(cfg =>
 {
     cfg.CreateMap<ToDo, ToDoDto>().ReverseMap();
-    //cfg.CreateMap<Memo, MemoDto>().ReverseMap();
+    cfg.CreateMap<Memo, MemoDto>().ReverseMap();
     //cfg.CreateMap<User, UserDto>().ReverseMap();
 });
 builder.Services.AddSingleton(autoConfiguration.CreateMapper());

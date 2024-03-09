@@ -256,3 +256,4 @@ C:\Users\YYH\Desktop\workspace\Todo\MyToDo.Api\obj\Debug\net8.0\ref\MyToDo.Api.d
 C:\Users\YYH\Desktop\workspace\Todo\MyToDo.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.AutoHistory.dll
 C:\Users\YYH\Desktop\workspace\Todo\MyToDo.Api\bin\Debug\net8.0\MyToDo.share.dll
 C:\Users\YYH\Desktop\workspace\Todo\MyToDo.Api\bin\Debug\net8.0\MyToDo.share.pdb
+C:\Users\YYH\Desktop\workspace\Todo\MyToDo.Api\bin\Debug\net8.0\AutoMapper.dll
